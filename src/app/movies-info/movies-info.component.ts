@@ -7,7 +7,7 @@ import { MovieService } from '../servicio/movie.service';
 @Component({
   selector: 'app-movies-info',
   templateUrl: './movies-info.component.html',
-  styleUrls: ['./movies-info.component.sass','../shared/common-styles.sass']
+  styleUrls: ['./movies-info.component.sass']
 })
 export class MoviesInfoComponent implements OnInit {
 

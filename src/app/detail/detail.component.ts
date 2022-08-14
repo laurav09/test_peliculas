@@ -5,7 +5,7 @@ import { MovieService } from '../servicio/movie.service';
 @Component({
   selector: 'app-detail',
   templateUrl: './detail.component.html',
-  styleUrls: ['./detail.component.sass','../shared/common-styles.sass']
+  styleUrls: ['./detail.component.sass']
 })
 export class DetailComponent implements OnInit {
 

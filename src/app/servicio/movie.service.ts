@@ -5,13 +5,13 @@ import { Movie } from '../modelo/movie';
 @Injectable({providedIn: 'root'})
 
 export class MovieService {
-  data:any
+  apiKey='8282085b'
   constructor(private httpClient: HttpClient) { }
   
   search(str:string){
-    return this.httpClient.get<Movie[]>('https://www.omdbapi.com/?apikey=d3f6c0ee&s='+str)
+    return this.httpClient.get<Movie[]>('https://www.omdbapi.com/?apikey='+this.apiKey+'&s='+str)
   }
   getByID(id:string){
-    return this.httpClient.get<Movie[]>('https://www.omdbapi.com/?apikey=d3f6c0ee&i='+id)
+    return this.httpClient.get<Movie>('https://www.omdbapi.com/?apikey='+this.apiKey+'&i='+id)
   }
 }
